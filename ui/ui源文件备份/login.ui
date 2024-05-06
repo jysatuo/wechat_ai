@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginWindow</class>
+ <widget class="QMainWindow" name="LoginWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>324</width>
+    <height>121</height>
+   </rect>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>卡密：</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>API Key：</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLineEdit" name="usernameEdit">
+            <property name="styleSheet">
+             <string notr="true">#usernameEdit {
+    border: 1px solid #ccc; /* 设置边框样式 */
+    border-radius: 5px; /* 设置边框圆角 */
+    padding: 5px; /* 设置内边距 */
+    font-size: 14px; /* 设置字体大小 */
+}
+
+#usernameEdit:focus {
+    border: 2px solid rgb(20,196,188); /* 输入框获取焦点时的边框样式 */
+}
+</string>
+            </property>
+            <property name="placeholderText">
+             <string>请从管理员中获取卡密进行绑定</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="passwordEdit">
+            <property name="styleSheet">
+             <string notr="true">#passwordEdit {
+    border: 1px solid #ccc; /* 设置边框样式 */
+    border-radius: 5px; /* 设置边框圆角 */
+    padding: 5px; /* 设置内边距 */
+    font-size: 14px; /* 设置字体大小 */
+}
+
+#passwordEdit:focus {
+    border: 2px solid rgb(20,196,188); /* 输入框获取焦点时的边框样式 */
+}
+</string>
+            </property>
+            <property name="echoMode">
+             <enum>QLineEdit::Password</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QPushButton" name="loginButton">
+        <property name="styleSheet">
+         <string notr="true">#loginButton {
+    background-color: rgb(20,196,188);
+    color: white; 
+    border: 2px solid rgb(20,196,188);
+    border-radius: 5px; 
+    padding: 5px 10px; 
+    font-size: 14px; 
+}
+
+#loginButton:hover {
+    background-color:  rgb(22,218,208);
+}
+
+#loginButton:pressed {
+    background-color: rgb(17,171,164);
+}
+
+QPushButton
+{
+	font: 25 14pt '微软雅黑';
+	color: rgb(255,255,255);
+	background-color: rgb(20,196,188);
+	border:none;
+	border-radius:10px;
+}
+QPushButton:hover
+{
+	background-color: rgb(22,218,208);
+}
+QPushButton:pressed
+{
+	background-color: rgb(17,171,164);
+}</string>
+        </property>
+        <property name="text">
+         <string>Login</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
